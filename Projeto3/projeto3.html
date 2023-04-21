@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>
+      Mentoria
+    </h1>
+    <p>
+      Preencha o formulário abaixo para <br>agendar a sua mentoria
+    </p>
+  </header>
+
+  <form id="formulário">
+
+    <fieldset>
+      <legend>Informações pessoais</legend>
+
+      <div class="col-3">
+        <div class="input-rwapper">
+          <labe>Nome</labe>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="input-rwapper">
+          <labe>Sobrenome</labe>
+          <input type="text" id="lastname" required>
+        </div>
+      </div>
+
+      <div class="input-rwapper">
+        <labe>E-mail <span>(digite um email válido)</span></labe>
+        <input type="text" id="email" required>
+      </div>
+
+      <div class="input-rwapper">
+        <labe>Senha <span>(mínimo de 6 caracteres)</span></labe>
+        <input type="password" id="password" required minlength="6" value="secret">
+
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações do mentor</legend>
+      <div class="input-rwapper">
+        <labe>Nome do seu mentor <span> (só o primeiro nome)</span></labe>
+        <input type="text" id="nameofmentor">
+      </div>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Seus horarios disponíveis</legend>
+      <sublegend> Primeira Mentoria</sublegend>
+      <div class="col-4">
+        <div class="input-rwapper">
+          <labe>Data <span>(DD/MM/AAAA)</span></labe>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="input-rwapper">
+          <labe>Das</labe>
+          <input type="time" id="time" required>
+        </div>
+
+        <div class="input-rwapper">
+          <labe>Até</labe>
+          <input type="time" id="time" required>
+        </div>
+      </div>
+
+      <sublegend> Segunda monitoria</sublegend>
+      <div class="col-4">
+        <div class="input-rwapper">
+          <labe>Data <span>(DD/MM/AAAA)</span></labe>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="input-rwapper">
+          <labe>Das</labe>
+          <input type="time" id="time" required>
+        </div>
+
+        <div class="input-rwapper">
+          <labe>Até</labe>
+          <input type="time" id="time" required>
+        </div>
+      </div>
+    </fieldset>
+
+  </form>
+  <footer>
+
+    <input type="submit" id="button" form="formulário" value="Salvar" action="http://google.com">
+
+  </footer>
+
+</body>
+
+</html>
